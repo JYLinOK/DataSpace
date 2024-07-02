@@ -68,3 +68,25 @@ Kotlin: 241.17890.1-IJ
 ![1719816029919](images/starUp/1719816029919.png)
 
 ![1719816209871](images/starUp/1719816209871.png)
+
+### 等待IDEA下载相关插件和依赖
+
+![1719817310694](images/starUp/1719817310694.png)
+
+### 下载安装完成后会出现提示
+
+![1719817632089](images/starUp/1719817632089.png)
+
+这主要是EDC Connector 使用的gradle版本比较久，部分功能不能使用的原因。
+
+---
+
+## 添加 maven 依赖下载中心
+
+在gradle配置文件：build.gradle.kts中，任意地方，首行定格添加下列代码：
+
+```gradle
+repositories {
+    mavenCentral()
+}
+```
